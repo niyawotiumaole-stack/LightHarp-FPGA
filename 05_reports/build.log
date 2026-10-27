@@ -1,0 +1,112 @@
+*** GOWIN Tcl Command Line Console  *** 
+Open project D:/codex/2026-10-11/wo/outputs/harp_oled_20261026/03_projects/harp8oled/harp8oled.gprj finished
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\03_projects\harp8oled\harp8oled.v'
+Analyzing Verilog file 'D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\allocator.v'
+Analyzing Verilog file 'D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\echo.v'
+Analyzing Verilog file 'D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\encoder_control.v'
+Analyzing Verilog file 'D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\envelope.v'
+Analyzing Verilog file 'D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\harp_core.v'
+Analyzing Verilog file 'D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\hc_sr04.v'
+Analyzing Verilog file 'D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\expression_map.v'
+Analyzing Verilog file 'D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\i2s_tx.v'
+Analyzing Verilog file 'D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\ir_filter.v'
+Analyzing Verilog file 'D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\mixer32.v'
+Analyzing Verilog file 'D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\note_bank.v'
+Analyzing Verilog file 'D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\sine_table.v'
+Analyzing Verilog file 'D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\test_control.v'
+Analyzing Verilog file 'D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\voice.v'
+Analyzing Verilog file 'D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\oled_sh1106.v'
+Compiling module 'harp8oled'("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\03_projects\harp8oled\harp8oled.v":1)
+Compiling module 'harp_core(N=8,EXPR_ENABLE=1)'("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\harp_core.v":10)
+Compiling module 'ir_filter'("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\ir_filter.v":3)
+Extracting RAM for identifier 'count'("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\ir_filter.v":5)
+Compiling module 'encoder_control'("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\encoder_control.v":4)
+Compiling module 'note_bank'("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\note_bank.v":2)
+Compiling module 'allocator(N=8)'("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\allocator.v":5)
+Compiling module 'test_control'("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\test_control.v":4)
+Compiling module 'hc_sr04'("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\hc_sr04.v":3)
+Compiling module 'expression_map'("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\expression_map.v":3)
+Compiling module 'voice(EXPR_EN=1)'("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\voice.v":13)
+Compiling module 'envelope'("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\envelope.v":4)
+Compiling module 'sine_table'("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\sine_table.v":3)
+Compiling module 'mixer32'("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\mixer32.v":3)
+Extracting RAM for identifier 's1'("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\mixer32.v":4)
+Extracting RAM for identifier 's2'("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\mixer32.v":4)
+Extracting RAM for identifier 's3'("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\mixer32.v":5)
+Compiling module 'i2s_tx'("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\i2s_tx.v":4)
+Compiling module 'oled_sh1106'("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\oled_sh1106.v":3)
+WARN  (EX3791) : Expression size 168 truncated to fit in target size 8("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\oled_sh1106.v":99)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 5("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\oled_sh1106.v":99)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\oled_sh1106.v":104)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\oled_sh1106.v":105)
+WARN  (EX3791) : Expression size 40 truncated to fit in target size 8("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\oled_sh1106.v":112)
+NOTE  (EX0101) : Current top module is "harp8oled"
+[5%] Running netlist conversion ...
+WARN  (CV0016) : Input test_key_n is unused("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\03_projects\harp8oled\harp8oled.v":2)
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+WARN  (NL0002) : The module "test_control" instantiated to "tc" is swept in optimizing("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\harp_core.v":56)
+WARN  (NL0002) : The module "sine_table" instantiated to "morph.rom_oct" is swept in optimizing("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\voice.v":57)
+WARN  (NL0002) : The module "sine_table" instantiated to "rom" is swept in optimizing("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\voice.v":48)
+WARN  (NL0002) : The module "sine_table" instantiated to "morph.rom_oct" is swept in optimizing("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\voice.v":57)
+WARN  (NL0002) : The module "sine_table" instantiated to "rom" is swept in optimizing("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\voice.v":48)
+WARN  (NL0002) : The module "sine_table" instantiated to "morph.rom_oct" is swept in optimizing("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\voice.v":57)
+WARN  (NL0002) : The module "sine_table" instantiated to "rom" is swept in optimizing("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\voice.v":48)
+WARN  (NL0002) : The module "sine_table" instantiated to "morph.rom_oct" is swept in optimizing("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\voice.v":57)
+WARN  (NL0002) : The module "sine_table" instantiated to "rom" is swept in optimizing("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\voice.v":48)
+WARN  (NL0002) : The module "sine_table" instantiated to "morph.rom_oct" is swept in optimizing("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\voice.v":57)
+WARN  (NL0002) : The module "sine_table" instantiated to "rom" is swept in optimizing("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\voice.v":48)
+WARN  (NL0002) : The module "sine_table" instantiated to "morph.rom_oct" is swept in optimizing("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\voice.v":57)
+WARN  (NL0002) : The module "sine_table" instantiated to "rom" is swept in optimizing("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\voice.v":48)
+WARN  (NL0002) : The module "sine_table" instantiated to "morph.rom_oct" is swept in optimizing("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\voice.v":57)
+WARN  (NL0002) : The module "sine_table" instantiated to "rom" is swept in optimizing("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\voice.v":48)
+WARN  (NL0002) : The module "sine_table" instantiated to "morph.rom_oct" is swept in optimizing("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\voice.v":57)
+WARN  (NL0002) : The module "sine_table" instantiated to "rom" is swept in optimizing("D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\01_RTL\voice.v":48)
+[95%] Generate netlist file "D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\03_projects\harp8oled\impl\gwsynthesis\harp8oled.vg" completed
+[100%] Generate report file "D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\03_projects\harp8oled\impl\gwsynthesis\harp8oled_syn.rpt.html" completed
+GowinSynthesis finish
+Reading netlist file: "D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\03_projects\harp8oled\impl\gwsynthesis\harp8oled.vg"
+Parsing netlist file "D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\03_projects\harp8oled\impl\gwsynthesis\harp8oled.vg" completed
+Processing netlist completed
+Reading constraint file: "D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\02_constraints\harp_expr.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'clk_d' by the specified constraint. And then it may lead to the excessive delay or skew
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\03_projects\harp8oled\impl\pnr\harp8oled.power.html" completed
+Generate file "D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\03_projects\harp8oled\impl\pnr\harp8oled.pin.html" completed
+Generate file "D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\03_projects\harp8oled\impl\pnr\harp8oled.rpt.html" completed
+Generate file "D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\03_projects\harp8oled\impl\pnr\harp8oled.rpt.txt" completed
+Generate file "D:\codex\2026-10-11\wo\outputs\harp_oled_20261026\03_projects\harp8oled\impl\pnr\harp8oled.tr.html" completed
+Mon Oct 26 19:25:22 2026
+

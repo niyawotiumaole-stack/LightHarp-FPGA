@@ -1,0 +1,16 @@
+
+****** xsim v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/tb_oled_audio/xsim_script.tcl
+# xsim {tb_oled_audio} -autoloadwcfg -runall
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run -all
+PASS OLED full top: audio I2S/sonar bit-exact to baseline, valid status, simultaneous refresh
+$finish called at time : 23015990 ns : File "D:/codex/oled_sim_6adb8c89e8d54d5682e47880432e3e36/04_sim/tb_oled_audio.sv" Line 31
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:32 . Memory (MB): peak = 217.633 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting xsim at Mon Oct 26 19:28:43 2026...

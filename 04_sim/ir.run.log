@@ -1,0 +1,24 @@
+
+****** xsim v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/ir_independent/xsim_script.tcl
+# xsim {ir_independent} -autoloadwcfg -runall
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run -all
+PASS input 1 independent filter/status/OLED/voice owner
+PASS input 2 independent filter/status/OLED/voice owner
+PASS input 3 independent filter/status/OLED/voice owner
+PASS input 4 independent filter/status/OLED/voice owner
+PASS input 5 independent filter/status/OLED/voice owner
+PASS input 6 independent filter/status/OLED/voice owner
+PASS input 7 independent filter/status/OLED/voice owner
+PASS input 8 independent filter/status/OLED/voice owner
+PASS simultaneous 1+5 yields 10001000 only when both inputs low
+$finish called at time : 14636860 ns : File "D:/codex/2026-10-11/wo/outputs/harp_oled_20261026/04_sim/tb_ir_independent.sv" Line 31
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 219.562 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting xsim at Mon Oct 26 20:21:35 2026...

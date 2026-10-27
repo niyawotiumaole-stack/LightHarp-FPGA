@@ -1,0 +1,36 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/XILINX/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe tb_oled_audio -s tb_oled_audio --O2 
+Multi-threading is on. Using 18 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3645] port 'led' remains unconnected for this instance [D:/codex/oled_sim_6adb8c89e8d54d5682e47880432e3e36/04_sim/tb_oled_audio.sv:7]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.ir_filter
+Compiling module work.encoder_control
+Compiling module work.note_bank
+Compiling module work.allocator(N=8)
+Compiling module work.test_control
+Compiling module work.hc_sr04(PERIOD_US=2000)
+Compiling module work.expression_map_default
+Compiling module work.envelope
+Compiling module work.sine_table
+Compiling module work.voice(EXPR_EN=1)
+Compiling module work.mixer32
+Compiling module work.i2s_tx
+Compiling module work.harp_core(N=8,EXPR_ENABLE=1)
+Compiling module work.oled_sh1106(POWER_CYCLES=10,RESE...
+Compiling module work.harp8oled
+Compiling module work.harp_core_base(N=8,EXPR_ENABLE=1...
+Compiling module work.tb_oled_audio
+Built simulation snapshot tb_oled_audio
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/codex/oled_sim_6adb8c89e8d54d5682e47880432e3e36/04_sim/xsim.dir/tb_oled_audio/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Oct 26 19:28:06 2026...

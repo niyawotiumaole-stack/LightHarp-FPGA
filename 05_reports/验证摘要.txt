@@ -1,0 +1,3 @@
+﻿Final build: Fmax 73.066 MHz, target 50 MHz; setup TNS 0, hold TNS 0.
+Desktop staged test runner: tb_oled PASS, tb_oled_audio PASS.
+Physical OLED test pending.

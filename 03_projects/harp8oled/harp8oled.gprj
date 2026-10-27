@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project><Template>FPGA</Template><Version>5</Version><Device name="GW5AT-60B" pn="GW5AT-LV60PG484AC1/I0">gw5at60b-002</Device><FileList>
+<File path="harp8oled.v" type="file.verilog" enable="1"/>
+<File path="../../01_RTL/allocator.v" type="file.verilog" enable="1"/>
+<File path="../../01_RTL/echo.v" type="file.verilog" enable="1"/>
+<File path="../../01_RTL/encoder_control.v" type="file.verilog" enable="1"/>
+<File path="../../01_RTL/envelope.v" type="file.verilog" enable="1"/>
+<File path="../../01_RTL/harp_core.v" type="file.verilog" enable="1"/>
+<File path="../../01_RTL/hc_sr04.v" type="file.verilog" enable="1"/>
+<File path="../../01_RTL/expression_map.v" type="file.verilog" enable="1"/>
+<File path="../../01_RTL/i2s_tx.v" type="file.verilog" enable="1"/>
+<File path="../../01_RTL/ir_filter.v" type="file.verilog" enable="1"/>
+<File path="../../01_RTL/mixer32.v" type="file.verilog" enable="1"/>
+<File path="../../01_RTL/note_bank.v" type="file.verilog" enable="1"/>
+<File path="../../01_RTL/sine_table.v" type="file.verilog" enable="1"/>
+<File path="../../01_RTL/test_control.v" type="file.verilog" enable="1"/>
+<File path="../../01_RTL/voice.v" type="file.verilog" enable="1"/>
+<File path="../../02_constraints/harp_expr.cst" type="file.cst" enable="1"/>
+<File path="../../02_constraints/harp.sdc" type="file.sdc" enable="1"/>
+<File path="../../01_RTL/oled_sh1106.v" type="file.verilog" enable="1"/></FileList></Project>
+

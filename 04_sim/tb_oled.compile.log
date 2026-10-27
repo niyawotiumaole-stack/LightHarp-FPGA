@@ -1,0 +1,36 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/codex/oled_sim_6adb8c89e8d54d5682e47880432e3e36/01_RTL/allocator.v" into library work
+INFO: [VRFC 10-311] analyzing module allocator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/codex/oled_sim_6adb8c89e8d54d5682e47880432e3e36/01_RTL/echo.v" into library work
+INFO: [VRFC 10-311] analyzing module echo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/codex/oled_sim_6adb8c89e8d54d5682e47880432e3e36/01_RTL/encoder_control.v" into library work
+INFO: [VRFC 10-311] analyzing module encoder_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/codex/oled_sim_6adb8c89e8d54d5682e47880432e3e36/01_RTL/envelope.v" into library work
+INFO: [VRFC 10-311] analyzing module envelope
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/codex/oled_sim_6adb8c89e8d54d5682e47880432e3e36/01_RTL/expression_map.v" into library work
+INFO: [VRFC 10-311] analyzing module expression_map
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/codex/oled_sim_6adb8c89e8d54d5682e47880432e3e36/01_RTL/harp_core.v" into library work
+INFO: [VRFC 10-311] analyzing module harp_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/codex/oled_sim_6adb8c89e8d54d5682e47880432e3e36/01_RTL/hc_sr04.v" into library work
+INFO: [VRFC 10-311] analyzing module hc_sr04
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/codex/oled_sim_6adb8c89e8d54d5682e47880432e3e36/01_RTL/i2s_tx.v" into library work
+INFO: [VRFC 10-311] analyzing module i2s_tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/codex/oled_sim_6adb8c89e8d54d5682e47880432e3e36/01_RTL/ir_filter.v" into library work
+INFO: [VRFC 10-311] analyzing module ir_filter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/codex/oled_sim_6adb8c89e8d54d5682e47880432e3e36/01_RTL/mixer32.v" into library work
+INFO: [VRFC 10-311] analyzing module mixer32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/codex/oled_sim_6adb8c89e8d54d5682e47880432e3e36/01_RTL/note_bank.v" into library work
+INFO: [VRFC 10-311] analyzing module note_bank
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/codex/oled_sim_6adb8c89e8d54d5682e47880432e3e36/01_RTL/oled_sh1106.v" into library work
+INFO: [VRFC 10-311] analyzing module oled_sh1106
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/codex/oled_sim_6adb8c89e8d54d5682e47880432e3e36/01_RTL/sine_table.v" into library work
+INFO: [VRFC 10-311] analyzing module sine_table
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/codex/oled_sim_6adb8c89e8d54d5682e47880432e3e36/01_RTL/test_control.v" into library work
+INFO: [VRFC 10-311] analyzing module test_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/codex/oled_sim_6adb8c89e8d54d5682e47880432e3e36/01_RTL/voice.v" into library work
+INFO: [VRFC 10-311] analyzing module voice
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/codex/oled_sim_6adb8c89e8d54d5682e47880432e3e36/03_projects/harp8oled/harp8oled.v" into library work
+INFO: [VRFC 10-311] analyzing module harp8oled
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/codex/oled_sim_6adb8c89e8d54d5682e47880432e3e36/04_sim/harp_core_base.v" into library work
+INFO: [VRFC 10-311] analyzing module harp_core_base
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/codex/oled_sim_6adb8c89e8d54d5682e47880432e3e36/04_sim/tb_oled.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_oled
