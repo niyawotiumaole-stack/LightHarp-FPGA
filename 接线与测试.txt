@@ -1,0 +1,65 @@
+﻿光影弦琴 OLED 接入版 — 2026-10-26
+
+这是独立新增的八声部 + 超声波 + OLED 版本，原来的已验证版本保留。
+软件编译与仿真通过；OLED 尚未完成实物点亮验证。不要直接替换外部 Flash。
+
+一、先做什么
+1. 给开发板断电，拍清楚靠近 PCIe 金手指一侧的 J13 长排针及丝印，确认 1 号脚方向。
+2. 按下表接线。J13 是 2×20 双排针，1～5 是针号，不是同一排连续五孔。
+   不要根据照片左右位置猜针号，不要接白色 FPC 插座，也不要动已有 PMOD 接线。
+3. OLED 使用现有 4-wire SPI 配置（BS1=0、BS0=0），NC 留空。
+4. 接好后上电，Programmer 选择 SRAM Mode / SRAM Program，文件选 06_bitstreams/harp8oled.fs。
+5. 下载 Finished 后观察屏幕。此时不用擦除或重写外部 Flash；断电重启可回到原先正常固件。
+6. OLED、八弦、旋钮、超声波都实测正常之后，再决定固化新版本。
+
+二、接线表
+OLED VCC → 已确认的开发板 3.3V 电源
+OLED GND → 开发板公共 GND
+OLED NC  → 不接
+OLED DIN → J13-1 / SDRAM0_D0 / FPGA E14
+OLED CLK → J13-2 / SDRAM0_D1 / FPGA E13
+OLED CS  → J13-3 / SDRAM0_D2 / FPGA C15
+OLED D/C → J13-4 / SDRAM0_D3 / FPGA C14
+OLED RES → J13-5 / SDRAM0_D4 / FPGA B13
+注意：J13-11 是 5V，不能当成 OLED 的 3.3V。J13 不可同时插 SDRAM 扩展模块。
+信号线尽量短，约 10～15cm。全部在断电状态下插拔。
+
+三、屏幕内容
+LIGHT HARP 8V：八声部版本
+MODE：旋钮当前控制项 VOLUME / PITCH / WAVE / ATTACK / DECAY / SUSTAIN / RELEASE
+VOL：音量档位；SOUND ON/OFF：是否静音
+WAVE TRI/SIN：三角波/正弦波；PITCH：相对默认音区的半音偏移
+A/D/S/R：包络档位索引，不是毫秒数
+HAND：测距厘米数；超过约 1 秒没有新读数显示 NO ECHO
+TONE：超声波表情值 0～255；ACTIVE：活跃声部数量
+IR：从第 1 到第 8 路，1 表示遮挡，0 表示无遮挡
+显示约每 0.11 秒更新一帧。
+
+四、实测验收
+1. 开机看到 8 行文字，无花屏。
+2. 旋钮长按切换 MODE，转动时相应参数变化；短按 SOUND ON/OFF 切换。
+3. 逐路遮挡红外：IR 对应位变化，八路均有正常声音。
+4. 手在超声波前移动：HAND、TONE 和音色随之变化。移走后检查 NO ECHO。
+5. 两路和多路一起演奏，确认无新增断音；连续演奏 10 分钟。
+如屏幕黑屏：先核对电源、共地、CS/DC/RES 与 SPI 配置，不要盲目换针。
+
+五、工程与验证
+01_RTL：合成源码（OLED 功能为 oled_sh1106.v，字库已内嵌）
+02_constraints：引脚和 50MHz 时钟约束
+03_projects/harp8oled：Gowin 工程和 build.tcl
+04_sim：SPI/文字快照测试、与原版音频逐位比较测试、实际仿真输出预览
+05_reports：综合布局布线、引脚及时序报告
+06_bitstreams：本次实际生成的 SRAM 测试文件
+重编译建议把整个目录复制到无中文的路径，然后运行 gw_sh.exe 加 build.tcl。
+build.tcl 明确启用 use_cpu_as_gpio，避免之前 CPU 复用脚错误。
+run_oled.ps1 使用本机 Vivado 2018.3，自动复制到 D:/codex 下英文目录运行。
+
+验证范围：初始化命令、SH1106 列偏移 2、每页 128 字节共 8 页、MSB 优先 SPI、
+完整两帧字符像素、帧中状态变化保持快照一致、下一帧更新模式/静音/音高/测距状态。
+音频等价测试在相同拨弦与超声波输入下比较 I2S 和 TRIG 波形，未发现差异。
+这些仿真不能替代实物 OLED 验证，也不是所有演奏情景的穷尽验证。
+现有 PR1014 通用时钟布线警告保留，最终时序报告为准。
+
+资料依据：官方 Tang Mega NEO Dock 原理图 J13、官方管脚 CST；Waveshare 1.3inch OLED(B) SH1106 手册。
+https://www.waveshare.com/product/displays/oled/1.3inch-oled-b.htm
+https://files.waveshare.com/upload/7/76/1.3inch_OLED_UserManual.pdf
